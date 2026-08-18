@@ -2,6 +2,7 @@
 set -eu
 
 cd /github/workspace
+git config --global --add safe.directory /github/workspace
 
 command="${INPUT_COMMAND:-}"
 
