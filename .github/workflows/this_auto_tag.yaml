@@ -27,4 +27,4 @@ jobs:
             --scm "github" \
             --github-token "${{ secrets.GITHUB_TOKEN }}" \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.repository }}"
+            --repo "${{ github.event.repository.name }}"
