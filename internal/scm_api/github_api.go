@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 )
 
@@ -59,7 +60,68 @@ func (a *GitHubApi) Tagging(commitSha string, tagName string, tagMessage string,
 	defer resq.Body.Close()
 
 	if resq.StatusCode >= 300 {
-		return fmt.Errorf("GitHub API returned error/redirect status code: %d", resq.StatusCode)
+		if resq.StatusCode >= 300 {
+			body, _ := io.ReadAll(resq.Body)
+			return fmt.Errorf(
+				"GitHub API returned %d: %s",
+				resq.StatusCode,
+				string(body),
+			)
+		}
 	}
+
+	type TagResponse struct {
+		SHA string `json:"sha"`
+	}
+
+	var tagResp TagResponse
+	if err := json.NewDecoder(resq.Body).Decode(&tagResp); err != nil {
+		return fmt.Errorf("failed to decode tag response: %v", err)
+	}
+
+	refBody := map[string]string{
+		"ref": "refs/tags/" + tagName,
+		"sha": tagResp.SHA,
+	}
+
+	refJSON, err := json.Marshal(refBody)
+	if err != nil {
+		return fmt.Errorf("failed to marshal ref body: %v", err)
+	}
+
+	refURL := fmt.Sprintf(
+		"https://api.github.com/repos/%s/%s/git/refs",
+		owner,
+		repo,
+	)
+
+	refReq, err := http.NewRequest(
+		"POST",
+		refURL,
+		bytes.NewBuffer(refJSON),
+	)
+	if err != nil {
+		return fmt.Errorf("failed to create ref request: %v", err)
+	}
+
+	refReq.Header.Set("Authorization", "Bearer "+token)
+	refReq.Header.Set("Content-Type", "application/json")
+	refReq.Header.Set("Accept", "application/vnd.github+json")
+
+	refRes, err := http.DefaultClient.Do(refReq)
+	if err != nil {
+		return fmt.Errorf("failed to create Git ref: %v", err)
+	}
+	defer refRes.Body.Close()
+
+	if refRes.StatusCode >= 300 {
+		body, _ := io.ReadAll(refRes.Body)
+		return fmt.Errorf(
+			"GitHub API returned error creating ref: %d: %s",
+			refRes.StatusCode,
+			string(body),
+		)
+	}
+
 	return nil
 }
