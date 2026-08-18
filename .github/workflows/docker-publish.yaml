@@ -9,9 +9,11 @@ on:
   push:
     branches: [ "master" ]
     # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+    #tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ "master" ]
+  release:
+    types: [ published ]
 
 env:
   # Use docker.io for Docker Hub if empty
@@ -34,6 +36,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || github.ref }}
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
@@ -66,6 +70,11 @@ jobs:
         uses: docker/metadata-action@96383f45573cb7f253c731d3b3ab81c87ef81934 # v5.0.0
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=raw,value=${{ github.event.release.tag_name }},enable=${{ github.event_name == 'release' }}
+            type=raw,value=latest,enable=${{ github.event_name == 'release' }}
+            type=ref,event=branch
+          # type=ref,event=tag
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
