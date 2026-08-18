@@ -22,7 +22,7 @@ jobs:
 
       - name: Run PR Version Validator
         run: |
-          go run ./cmd/pr-version-validator/main.go \
+          go run ./cmd/pr-version-validate/main.go \
             --target-branch "${{ github.base_ref }}" \
             --version-file "version.go" \
             --version-file-format "php"
