@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Fix Dockerfile command" />
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Add docker publish workflow">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +129,8 @@
     <MESSAGE value="Fix go actions args" />
     <MESSAGE value="Fix go actions args path" />
     <MESSAGE value="Fix Dockerfile command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Dockerfile command" />
+    <MESSAGE value="Bump version for merge" />
+    <MESSAGE value="Add docker publish workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add docker publish workflow" />
   </component>
 </project>
