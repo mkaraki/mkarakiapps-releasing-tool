@@ -4,7 +4,7 @@ on:
 
 jobs:
   validate:
-    uses: mkaraki/mkarakiapps-releasing-actions/.github/workflows/pr-version-validator.yaml@6354025be9de42906dea21ddba5d65667e2d6f3a
+    uses: mkaraki/mkarakiapps-releasing-actions/.github/workflows/pr-version-validator.yaml@15662b3c362acb3a1fd5fa453e12c9ca5fe2a2ce
     with:
       target-branch: ${{ github.base_ref }}
       version-file: version.go
