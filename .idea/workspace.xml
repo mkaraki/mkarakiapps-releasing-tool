@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Fix go actions args path">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Fix Dockerfile command" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +126,7 @@
     <MESSAGE value="Fix actions go version" />
     <MESSAGE value="Fix go actions args" />
     <MESSAGE value="Fix go actions args path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix go actions args path" />
+    <MESSAGE value="Fix Dockerfile command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Dockerfile command" />
   </component>
 </project>
