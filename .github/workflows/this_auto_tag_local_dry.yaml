@@ -1,0 +1,25 @@
+name: Test auto publish version tag (Local)
+on:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup Go
+        uses: actions/setup-go@v7
+        with:
+          go-version-file: 'go.mod'
+
+      - name: Run auto tagger
+        run: |
+          go run ./cmd/auto-tag/main.go \
+            --version-file "version.go" \
+            --version-file-format "php" \
+            --scm "local-dry"
