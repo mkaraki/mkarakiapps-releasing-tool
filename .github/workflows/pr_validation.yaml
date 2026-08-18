@@ -1,6 +1,6 @@
 name: PR Version Validation (Prod, Master)
 on:
-  pull_request:
+  pull_request: {}
 
 jobs:
   validate:
