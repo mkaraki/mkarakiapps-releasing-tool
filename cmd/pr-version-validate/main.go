@@ -59,8 +59,13 @@ func main() {
 	}
 
 	targetBranchVersionFileLines, err := app_version.ReadLinesFromGitFile(*targetBranch, *versionFile)
-	if err != nil || len(targetBranchVersionFileLines) == 0 {
-		println("Target branch version file does not exist, is empty, or could not be read, skipping version comparison.")
+	if err != nil {
+		errStr := err.Error()
+		println("Target branch version file does not exist, is empty, or could not be read, skipping version comparison. Got: ", errStr)
+		return
+	}
+	if len(targetBranchVersionFileLines) == 0 {
+		println("Target branch version file is empty, skipping version comparison.")
 		return
 	}
 
