@@ -76,4 +76,6 @@ func main() {
 	if !versioning_management.IsAVersionLargerThanB(newVersionObject, targetBranchVersionObject) {
 		panic("new version is not larger than the target branch version")
 	}
+
+	println("Version validation passed.")
 }

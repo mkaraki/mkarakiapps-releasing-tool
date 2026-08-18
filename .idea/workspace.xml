@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/app_version/app_version_extractor_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/git_utils/git_info.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/version.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/versioning_management.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/versioning_management_test.go" beforeDir="false" />
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Try to add simple pr-validator">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/pr-version-validate/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/pr-version-validate/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,11 @@
   </component>
   <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="program-test-branch" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -98,6 +95,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" />
+        <item itemvalue="Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" />
       </list>
     </recent_temporary>
   </component>
@@ -121,5 +119,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Try to add simple pr-validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to add simple pr-validator" />
   </component>
 </project>
