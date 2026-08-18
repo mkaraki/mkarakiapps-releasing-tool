@@ -9,7 +9,7 @@ COPY . .
 
 FROM prep AS builder-pr-version-validator
 
-RUN go build -o pr-version-validator cmd/pr-version-validator
+RUN go build -o pr-version-validator cmd/pr-version-validate/main.go
 
 FROM alpine
 

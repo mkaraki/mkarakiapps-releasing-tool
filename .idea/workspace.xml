@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Fix go actions args">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/this_pr_validation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/this_pr_validation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Fix go actions args path">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +127,7 @@
     <MESSAGE value="Add actions base and pr validator" />
     <MESSAGE value="Fix actions go version" />
     <MESSAGE value="Fix go actions args" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix go actions args" />
+    <MESSAGE value="Fix go actions args path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix go actions args path" />
   </component>
 </project>
