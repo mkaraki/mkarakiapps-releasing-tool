@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Add docker publish workflow">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Fix actions entrypoint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,10 +28,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="3I5N1JG8UWXZl0ybhrumHlZRseA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,7 +52,7 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "add-actions-base-and-pr-validator",
+    "git-widget-placeholder": "fix-actions-entrypoint",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "D:/projects/mkarakiapps-releasing-tool/internal/app_version",
     "node.js.detected.package.eslint": "true",
@@ -131,6 +129,7 @@
     <MESSAGE value="Fix Dockerfile command" />
     <MESSAGE value="Bump version for merge" />
     <MESSAGE value="Add docker publish workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add docker publish workflow" />
+    <MESSAGE value="Fix actions entrypoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix actions entrypoint" />
   </component>
 </project>
