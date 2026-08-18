@@ -1,0 +1,26 @@
+name: PR Version Validation (Local)
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Fetch target branch
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch --no-tags origin \
+            "${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
+
+      - name: Setup Go
+        uses: actions/setup-go@v7
+
+      - name: Run PR Version Validator
+        run: |
+          go run ./cmd/pr-version-validator \
+            --target-branch "${{ github.base_ref }}" \
+            --version-file "version.go" \
+            --version-file-format "php"
