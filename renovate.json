@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "actions/*",
+        "docker/*"
+      ],
+      "groupName": "GitHub/Docker official actions"
+    }
+  ],
+  "bumpVersions": [
+    {
+      "name": "Application version",
+      "filePatterns": ["version.go"],
+      "matchStrings": [
+        "const APP_VERSION\\s*=\\s*['\"]v(?<version>\\d+\\.\\d+\\.\\d+)['\"]"
+      ],
+      "bumpType": "patch"
+    }
+  ],
+  "assignees": [
+    "mkaraki"
+  ]
+}
