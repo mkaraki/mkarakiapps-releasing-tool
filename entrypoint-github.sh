@@ -35,6 +35,50 @@ case "$command" in
 
     exec "$@"
     ;;
+  "auto-tag")
+    echo "Running auto-tag..."
+
+    version_file=$(printenv 'INPUT_VERSION-FILE' || true)
+    version_file_format=$(printenv 'INPUT_VERSION-FILE-FORMAT' || true)
+    local_patch_prefix=$(printenv 'INPUT_LOCAL-PATCH-PREFIX' || true)
+    scm=$(printenv 'INPUT_SCM' || true)
+    github_token=$(printenv 'INPUT_GITHUB-TOKEN' || true)
+    owner=$(printenv 'INPUT_OWNER' || true)
+    repo=$(printenv 'INPUT_REPO' || true)
+
+    set -- /usr/bin/auto-tag
+
+    if [ -n "$version_file" ]; then
+      set -- "$@" --version-file "$version_file"
+    fi
+
+    if [ -n "$version_file_format" ]; then
+      set -- "$@" --version-file-format "$version_file_format"
+    fi
+
+    if [ -n "$local_patch_prefix" ]; then
+      set -- "$@" --local-patch-prefix "$local_patch_prefix"
+    fi
+
+    if [ -n "$scm" ]; then
+      set -- "$@" --scm "$scm"
+    fi
+
+    if [ -n "$github_token" ]; then
+      set -- "$@" --github-token "$github_token"
+    fi
+
+    if [ -n "$owner" ]; then
+      set -- "$@" --owner "$owner"
+    fi
+
+    if [ -n "$repo" ]; then
+      set -- "$@" --repo "$repo"
+    fi
+
+    exec "$@"
+
+    ;;
   *)
     echo "Unknown command: $command"
     exit 1

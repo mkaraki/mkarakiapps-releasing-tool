@@ -1,8 +1,10 @@
 package git_utils
 
 import (
+	"fmt"
 	"os"
 	"os/exec"
+	"regexp"
 	"strings"
 )
 
@@ -34,4 +36,40 @@ func GetCurrentBranchName() (string, error) {
 	}
 
 	return branchName, nil
+}
+
+func GetCurrentCommitSHA() (string, error) {
+	// Run git command to get current commit SHA
+	cmd := exec.Command("git", "rev-parse", "HEAD")
+	output, err := cmd.CombinedOutput()
+	if err != nil {
+		return "", fmt.Errorf("failed to get current commit SHA: %v. Output: %s", err, output)
+	}
+
+	commitSHA := strings.TrimSpace(string(output))
+
+	shaRe, err := regexp.Compile(`^[0-9a-f]{40}$`)
+	if err != nil {
+		return "", fmt.Errorf("failed to compile SHA regex: %v", err)
+	}
+
+	if !shaRe.MatchString(commitSHA) {
+		commitSHA = ""
+	}
+
+	if commitSHA == "" {
+		// Try to use env variable from GitHub Actions
+		commitSHA = strings.TrimSpace(getEnv("GITHUB_SHA", ""))
+	}
+
+	if commitSHA == "" {
+		// Try to use env variable from GitLab CI
+		commitSHA = strings.TrimSpace(getEnv("CI_COMMIT_SHA", ""))
+	}
+
+	if commitSHA == "" {
+		return "", fmt.Errorf("failed to get current commit SHA")
+	}
+
+	return commitSHA, nil
 }
