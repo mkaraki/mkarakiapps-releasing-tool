@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Add docker publish workflow">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Remove go.sum requirement because not found for now.">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/pr_validation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +55,9 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "add-actions-base-and-pr-validator",
+    "git-widget-placeholder": "add-prod-pr-version-validator",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/projects/mkarakiapps-releasing-tool/internal/app_version",
+    "last_opened_file_path": "D:/projects/mkarakiapps-releasing-tool/.github/workflows",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
@@ -64,6 +65,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\mkarakiapps-releasing-tool\.github\workflows" />
       <recent name="D:\projects\mkarakiapps-releasing-tool\internal\app_version" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -95,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" />
         <item itemvalue="Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" />
         <item itemvalue="Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" />
       </list>
@@ -131,6 +134,7 @@
     <MESSAGE value="Fix Dockerfile command" />
     <MESSAGE value="Bump version for merge" />
     <MESSAGE value="Add docker publish workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add docker publish workflow" />
+    <MESSAGE value="Remove go.sum requirement because not found for now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove go.sum requirement because not found for now." />
   </component>
 </project>
