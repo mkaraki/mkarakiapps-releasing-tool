@@ -30,4 +30,4 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-  entrypoint: /entrypoint-github.sh
+  entrypoint: /usr/bin/entrypoint-github.sh
