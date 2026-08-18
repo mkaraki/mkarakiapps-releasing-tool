@@ -1,0 +1,33 @@
+name: mkarakiapps Releasing Tool
+description: Releasing utilities for strict versioning
+author: mkaraki
+
+inputs:
+  command:
+    description: The command to run (e.g., `pr-version-validator`)
+    required: true
+
+  # Used by `pr-version-validator`
+  target-branch:
+    description: The target branch for the pull request (e.g., `main`)
+    required: false
+
+  # Required by `pr-version-validator`
+  version-file:
+    description: The path to the version file (e.g., `app_version.php`)
+    required: false
+
+  # Required by `pr-version-validator`
+  version-file-format:
+    description: The format of the version file (e.g., `php`)
+    required: false
+
+  # Optional input for `pr-version-validator`
+  local-patch-prefix:
+    description: The local patch prefix to use for version validation (e.g., `patch`)
+    required: false
+
+runs:
+  using: docker
+  image: Dockerfile
+  entrypoint: /entrypoint-github.sh
