@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Add actions base and pr validator">
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Fix actions go version">
       <change beforePath="$PROJECT_DIR$/.github/workflows/this_pr_validation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/this_pr_validation.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +125,7 @@
     <MESSAGE value="Try to add simple pr-validator" />
     <MESSAGE value="Add finish message" />
     <MESSAGE value="Add actions base and pr validator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add actions base and pr validator" />
+    <MESSAGE value="Fix actions go version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix actions go version" />
   </component>
 </project>
