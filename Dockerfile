@@ -14,6 +14,8 @@ RUN go build -o pr-version-validator cmd/pr-version-validate/main.go
 
 FROM alpine
 
+RUN apk --no-cache add ca-certificates git
+
 WORKDIR /workdir
 
 COPY --from=builder-pr-version-validator /app/pr-version-validator /usr/bin/pr-version-validator

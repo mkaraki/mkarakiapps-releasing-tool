@@ -56,9 +56,9 @@ func indexOfNewline(line []byte) int {
 
 func ReadLinesFromGitFile(branch string, filePath string) ([]string, error) {
 	cmd := exec.Command("git", "show", branch+":"+filePath)
-	output, err := cmd.Output()
+	output, err := cmd.CombinedOutput()
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to read file from git branch: exec error: %s. Output: %s", err, output)
 	}
 	lines := []string{}
 	currentLine := []byte{}
