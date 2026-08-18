@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Add finish message">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/this_pr_validation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/action.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entrypoint-github.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="Add actions base and pr validator">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/this_pr_validation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/this_pr_validation.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="program-test-branch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +54,7 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "add-actions-base-and-pr-validator",
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "D:/projects/mkarakiapps-releasing-tool/internal/app_version",
     "node.js.detected.package.eslint": "true",
@@ -128,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Try to add simple pr-validator" />
     <MESSAGE value="Add finish message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add finish message" />
+    <MESSAGE value="Add actions base and pr validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add actions base and pr validator" />
   </component>
 </project>
