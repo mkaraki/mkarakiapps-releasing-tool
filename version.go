@@ -1,4 +1,4 @@
 package version
 
 //goland:noinspection GoSnakeCaseUsage
-const APP_VERSION = "v0.1.6"
+const APP_VERSION = "v0.1.7"

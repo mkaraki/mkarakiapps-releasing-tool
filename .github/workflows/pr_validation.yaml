@@ -1,0 +1,11 @@
+name: PR Version Validation (Prod, Master)
+on:
+  pull_request: {}
+
+jobs:
+  validate:
+    uses: mkaraki/mkarakiapps-releasing-actions/.github/workflows/pr-version-validator.yaml@master
+    with:
+      target-branch: ${{ github.base_ref }}
+      version-file: version.go
+      version-file-format: php
