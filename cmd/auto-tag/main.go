@@ -100,5 +100,5 @@ func main() {
 		fmt.Printf("Dry run: would have tagged commit %s with tag %s\n", commitSha, newVersion)
 	}
 
-	println("Done.")
+	fmt.Printf("Done: tagged commit %s with tag %s\n", commitSha, newVersion)
 }
