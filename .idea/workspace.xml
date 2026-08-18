@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/app_version/app_version_extractor_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/git_utils/git_info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/versioning_management.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/versioning_management_test.go" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="3I5N1JG8UWXZl0ybhrumHlZRseA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.GoOptimizationToolWindowEnableInLayout.v333333": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.analysis.ui.options.defaults": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "D:/projects/mkarakiapps-releasing-tool/internal/app_version",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\mkarakiapps-releasing-tool\internal\app_version" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\mkarakiapps-releasing-tool\internal\app_version" />
+      <recent name="D:\projects\mkarakiapps-releasing-tool\internal\versioning_management" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version">
+    <configuration name="go build github.com/mkaraki/mkarakiapps-releasing-tool/cmd/pr-version-validate" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="mkarakiapps-releasing-tool" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/mkaraki/mkarakiapps-releasing-tool/cmd/pr-version-validate" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/cmd/pr-version-validate" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="mkarakiapps-releasing-tool" />
+      <working_directory value="$PROJECT_DIR$/internal/app_version" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestExtractVersionFromPhpFileLines\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestExtractVersionFromPhpFileLines in github.com/mkaraki/mkarakiapps-releasing-tool/internal/app_version" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-63c95d513abe-9addb268e56c-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-262.9437.195" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-GO-262.9437.195" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bc7b6f7-ce81-4e07-89cb-314c7abbfb16" name="Changes" comment="" />
+      <created>1787050255469</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787050255469</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

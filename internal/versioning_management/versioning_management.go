@@ -1,4 +1,4 @@
-package main
+package versioning_management
 
 import (
 	"regexp"
@@ -39,7 +39,7 @@ func IsCleanReleaseVersionString(versionString string, localPatchPrefix string) 
 		return false
 	}
 
-	re, err = regexp.Compile("^v?(\\d+)\\.(\\d+)\\.(\\d+)-" + localPatchPrefix + "(\\d+)$")
+	re, err = regexp.Compile("^v?(\\d+)\\.(\\d+)\\.(\\d+)-" + regexp.QuoteMeta(localPatchPrefix) + "(\\d+)$")
 	if err != nil {
 		panic(err)
 	}

@@ -1,3 +1,3 @@
-module mkarakiapps-releasing-tool
+module github.com/mkaraki/mkarakiapps-releasing-tool
 
 go 1.26

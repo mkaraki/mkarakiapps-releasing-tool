@@ -1,4 +1,4 @@
-package main
+package versioning_management
 
 import "testing"
 
