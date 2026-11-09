@@ -4,9 +4,19 @@
     {
       "matchPackageNames": [
         "actions/*",
-        "docker/*"
+        "docker/*",
+        "sigstore/*"
       ],
       "groupName": "GitHub/Docker official actions"
+    },
+    {
+      "description": "Automerge GitHub Actions minor/patch updates (by Muse)",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "ignoreTests": false
     }
   ],
   "bumpVersions": [
